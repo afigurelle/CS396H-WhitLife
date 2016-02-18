@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		body {background-color:#cc3300}
+		h1 {color:white; text-align:center}
+		a {color:black; text-align:center}
+	</style>
+	<title>
+		Campus Survival
+	</title>
+	</head>
+	<body>
+		<h1>
+			Whitworth Campus Survival Application
+		</h1>
+		<a href="Description.html">Project Description</a>
+		<a href="Members.html">Team Members</a>
+		<img id="myImage" onclick="changeImage()" src="home screen.jpg" width="250" height="500">
+		<script>
+			function changeImage() {
+				var image = document.getElementById('myImage');
+				if(image.src.match("first")){
+					image.src = "home screen.jpg";
+				} else if(image.src.match("second")){
+					 image.src = "Events screen shot.jpg";
+				} else if(image.src.match("third")){
+					 image.src = "tips and tricks screen shot.jpeg";
+				} else if(image.src.match("fourth")){
+					 image.src = "Classifieds Screen Shot.jpeg";
+				} else {
+					 image.src = "Chat screen shot.jpeg";
+				}
+			}
+		</script>
+	</body>
+</html>
